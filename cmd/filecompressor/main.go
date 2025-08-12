@@ -34,12 +34,15 @@ func main() {
 	var command string
 	var inputPath string
 	var outputPath string
+
+	fmt.Print("\n------- 🗜️ GO FILE COMPRESSOR/DE-COMPRESSOR -------\n\n")
+
 	fmt.Println("What to do today?")
-	fmt.Println("** OPTIONS **")
-	fmt.Println("1) Compress File")
-	fmt.Println("2) Compress Folder")
-	fmt.Println("3) De-Compress File")
-	fmt.Println("4) De-Compress Folder")
+	fmt.Println("1) Compress File 📁")
+	fmt.Println("2) Compress Folder 🗂️")
+	fmt.Println("3) De-Compress File 📁")
+	fmt.Println("4) De-Compress Folder 🗂️")
+	fmt.Print("\nEnter Option : ")
 
 	//ask the user to input an option
 
@@ -62,10 +65,10 @@ func main() {
 
 	}
 
-	fmt.Printf("Enter %s names : \n", inputType)
-	fmt.Printf("Input %s  : \n", inputType)
+	fmt.Printf("\n ------ Enter %s names : ------ \n", inputType)
+	fmt.Printf("\nInput %s  : ", inputType)
 	fmt.Scanln(&inputPath)
-	fmt.Printf("Output %s  : \n", inputType)
+	fmt.Printf("\nOutput %s  : ", inputType)
 	fmt.Scanln(&outputPath)
 
 	// fmt.Println("os.args : ", os.Args)
